@@ -1,0 +1,14 @@
+# Docker Task-2 command reference
+# Run these from the directory containing Dockerfile and docker-compose.yml.
+
+sudo docker compose up -d --build
+sudo docker compose ps
+sudo docker images
+sudo docker logs docker-task-2-profile
+curl http://localhost:8080
+
+# Stop and remove the container/network created by Compose:
+sudo docker compose down
+
+# Rebuild and start again after editing index.html:
+sudo docker compose up -d --build

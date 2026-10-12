@@ -1,0 +1,7 @@
+services:
+  profile-website:
+    build: .
+    container_name: docker-task-2-profile
+    ports:
+      - "8080:80"
+    restart: unless-stopped
